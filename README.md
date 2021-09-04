@@ -16,7 +16,7 @@ Top journals: ```TKDE```
 |-------|--------|--------|--------|--------|--------|--------|--------|
 |2021|**GNEW: A Generic One-to-Set Neural Entity Matching Framework**|GNN|Supervised|```WWW```|0|[PDF](https://dl.acm.org/doi/10.1145/3442381.3450119)|[Code](https://github.com/ChenRunjin/GNEM)|
 |2021|**Rotom: A Meta-Learned Data Augmentation Framework for Entity Matching, Data Cleaning, Text Classification, and Beyond**|Meta Learning|Semi-supervised|```SIGMOD```|0|[PDF](https://dl.acm.org/doi/10.1145/3448016.3457258)|[Code](https://github.com/megagonlabs/rotom)|
-|2021| **Dual-Objective Fine-Tuning of Bert for Entity Matching     | Pre-trained model |Supervised|```DBLP```|1|[PDF](http://www.vldb.org/pvldb/vol14/p1913-peeters.pdf)|[Code](https://github.com/wbsg-uni-mannheim/jointbert)|
+|2021| **Dual-Objective Fine-Tuning of Bert for Entity Matching**     | Pre-trained model |Supervised|```DBLP```|1|[PDF](http://www.vldb.org/pvldb/vol14/p1913-peeters.pdf)|[Code](https://github.com/wbsg-uni-mannheim/jointbert)|
 |2020|**Efficient Entity Resoltion on Heterogeneous Records**|Super Record|Unsupervised|```TKDE```|4|[PDF](https://ieeexplore.ieee.org/document/8637043)||
 |2018|**Deep Learning for Entity Matching: A Design Space Exploration**|Deep Learning|Supervised|```SIGMOD```|245|[PDF](https://dl.acm.org/doi/10.1145/3183713.3196926)|[Code](https://github.com/anhaidgroup/deepmatcher)|
 
