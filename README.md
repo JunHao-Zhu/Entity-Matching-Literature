@@ -41,7 +41,7 @@ Top journals: ```TKDE```
 |Year    | Title  | Model | Type | Venue | Citations | Paper | Code |
 |-------|--------|--------|--------|--------|--------|--------|--------|
 |2021 | **Boosting the Speed of Entity Alignment 10×: Dual Attention Matching Network with Normalized Hard Sample Mining** | GNN Attention | Unsupervised | ```WWW``` | 0 | [PDF](https://dl.acm.org/doi/10.1145/3442381.3449897) | [Code](https://github.com/MaoXinn/Dual-AMN) |
-|2021|**Make It Easy: An Effective End-to-End Entity Alignment Framework**|similarity matrix|Unsupervised/Supervised|```SIGIR```|0|[PDF](https://dl.acm.org/doi/abs/10.1145/3404835.3462870)|[Code](https://github.com/ZJU-DBL/EASY)|
+|2021|**Make It Easy: An Effective End-to-End Entity Alignment Framework**|similarity matrix|Unsupervised|```SIGIR```|0|[PDF](https://dl.acm.org/doi/abs/10.1145/3404835.3462870)|[Code](https://github.com/ZJU-DBL/EASY)|
 |2021|**Entity Alignment for Knowledge Graphs with Multi-order Convolutional Networks (Extended Abstract)**|GCN|Unsupervised|```ICDE```|-|[PDF](https://ieeexplore.ieee.org/document/9262038)|[Code](https://github.com/thanhtrunghuynh93/EMGCN)|
 |2021|**Visual Pivoting for (Unsupervised) Entity Alignment**|GNN+Resnet+relation and attribute model (**EVA**)|Unsupervised|```AAAI```|3|[PDF](https://ojs.aaai.org/index.php/AAAI/article/view/16550)|[Code](https://github.com/cambridgeltl/eva)|
 |2021|**Relation-Aware Neighborhood Matching Model for Entity Alignment**|||```AAAI```||[PDF]()|[Code]()|
