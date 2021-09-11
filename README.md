@@ -19,9 +19,9 @@ Top journals: ```TKDE```
 |2021| **Dual-Objective Fine-Tuning of Bert for Entity Matching**   | Pre-trained model (JointBert) |Supervised|```DBLP```|[PDF](http://www.vldb.org/pvldb/vol14/p1913-peeters.pdf)|[Code](https://github.com/wbsg-uni-mannheim/jointbert)|
 |2021|**Online Topic-Aware Entity Resolution Over Incomplete Data Stream**|topic-aware similarity|Unsupervised|```SIGMOD```|[PDF](https://dl.acm.org/doi/10.1145/3448016.3457238)||
 |2021|**End-to-End Task Based Parallelization for Entity Resolution on Dynamic Data**|||```ICDE```|[PDF]()|[Code]()|
-|2021|**Cost-effective Variational Active Entity Resolution**|||```ICDE```|[PDF]()|[Code]()|
-|2021|**Automating Entity Matching Model Development**|||```ICDE```|[PDF]()|[Code]()|
-|2021|**Improving the Efficiency and Effectiveness for BERT-based Entity Resoltion**|||```AAAI```|[PDF]()|[Code]()|
+|2021|**Cost-effective Variational Active Entity Resolution**|VAER (VAE+Active learning)|Unsupervised|```ICDE```|[PDF](https://ieeexplore.ieee.org/document/9458760)||
+|2021|**Automating Entity Matching Model Development**|AutoML-EM-Active|Semi-supervised|```ICDE```|[PDF](https://ieeexplore.ieee.org/document/9458781)||
+|2021|**Improving the Efficiency and Effectiveness for BERT-based Entity Resoltion**|BERT-ER|Supervised|```AAAI```|[PDF]()|[Code]()|
 |2020|**Efficient Entity Resoltion on Heterogeneous Records**|Super Record|Unsupervised|```TKDE```|[PDF](https://ieeexplore.ieee.org/document/8637043)||
 |2020|**$r$-HUMO: A Risk-Aware Human-Machine Cooperation Framework for Entity Resolution with Quality Guarantees**|||```TKDE```|[PDF]()|[Code]()|
 |2020|**Multi-Context Attention for Entity Matching**|||```WWW```|[PDF]()|[Code]()|
@@ -41,11 +41,11 @@ Top journals: ```TKDE```
 
 |Year    | Title  | Model | Type | Venue | Paper | Code |
 |-------|--------|--------|--------|--------|--------|--------|
-|2021 | **Boosting the Speed of Entity Alignment 10×: Dual Attention Matching Network with Normalized Hard Sample Mining** | GNN Attention | Unsupervised | ```WWW``` |[PDF](https://dl.acm.org/doi/10.1145/3442381.3449897) | [Code](https://github.com/MaoXinn/Dual-AMN) |
+|2021 | **Boosting the Speed of Entity Alignment 10×: Dual Attention Matching Network with Normalized Hard Sample Mining** | GNN Attention (**Dual-AMN**) | Unsupervised | ```WWW``` |[PDF](https://dl.acm.org/doi/10.1145/3442381.3449897) | [Code](https://github.com/MaoXinn/Dual-AMN) |
 |2021|**Make It Easy: An Effective End-to-End Entity Alignment Framework**|similarity matrix (EASY=NEAP+SRS)|Unsupervised|```SIGIR```|[PDF](https://dl.acm.org/doi/abs/10.1145/3404835.3462870)|[Code](https://github.com/ZJU-DBL/EASY)|
 |2021|**Entity Alignment for Knowledge Graphs with Multi-order Convolutional Networks (Extended Abstract)**|GCN (EMGCN)|Unsupervised|```ICDE```|[PDF](https://ieeexplore.ieee.org/document/9262038)|[Code](https://github.com/thanhtrunghuynh93/EMGCN)|
 |2021|**Visual Pivoting for (Unsupervised) Entity Alignment**|GNN+Resnet+relation and attribute model (**EVA**)|Unsupervised|```AAAI```|[PDF](https://ojs.aaai.org/index.php/AAAI/article/view/16550)|[Code](https://github.com/cambridgeltl/eva)|
-|2021|**Relation-Aware Neighborhood Matching Model for Entity Alignment**|||```AAAI```|[PDF]()|[Code]()|
+|2021|**Relation-Aware Neighborhood Matching Model for Entity Alignment**|Relation-aware Neighborhood Matching (**RNM**)|Semi-supervised|```AAAI```|[PDF](https://ojs.aaai.org/index.php/AAAI/article/view/16606)||
 |2021|**Business Entity Matching with Siamese Graph Convolutional Networks**|||```AAAI```|[PDF]()|[Code]()|
 |2020|**Collective Multi-type Entity Alignment Between Knowledge Graph**|||```WWW```|[PDF]()|[Code]()|
 |2020|**A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs**|||```DBLP```|[PDF]()|[Code]()|
