@@ -43,6 +43,10 @@
 * 使用**图像相似性**来代替标签信息，实现**无监督学习**
 * 通过消融实验给出各个模态的可解释性
 
+**Weaknesses:**
+
+虽然取得了很好的效果，但其实要求很高，因此会包含图像信息的知识图谱并不多，局限性比较大
+
 ### **End-to-End Task Based Parallelization for Entity Resolution on Dynamic Data**
 
 *Leonardo Gazzarri, Melanie Herschel*    **ICDE** [(PDF)](https://ieeexplore.ieee.org/document/9458646) (Citations: **0**)
@@ -50,6 +54,12 @@
 **Motivation:**
 
 考虑了两种**动态**的数据库的实体解析：1）增量式（有限数量实体的周期更新）2）流动式实体更新。需要一个速度快、精准的实体解析算法，希望将blocking和ER两个环节**并行处理** 
+
+**Contributions:**
+
+* 提出针对动态数据的端到端框架
+* 将ER pipline定义为了一个个function的串联
+* 对block和ER两个环节进行并行处理，特别是将block cleaning和comparison clean进行修改，使其更适合平行化。
 
 ### **Rotom: A Meta-Learned Data Augmentation Framework for Entity Matching, Data Cleaning, Text Classification, and Beyond**
 
@@ -101,8 +111,12 @@ Dual-Objective实现两种目标：商品种类的分类任务（多分类任务
 **Contribution：**
 
 * 将Auto-ML技术应用到了EM任务中，自动选择机器学习模型进行Entity Matching
-
 * 通过自训练的方式学习更多标签，获得更多的数据
+
+**Weaknesses:**
+
+1. Auto-ML还只是对Matching这个部分进行的，能不能够将blocking也加入到automating这部分
+2. Auto-ML在一定的时间内找到一个最优的模型，但这个模型不一定是全局最优的。Auto-ML的搜索空间太大
 
 ### **Online Topic-Aware Entity Resolution Over Incomplete Data Streams**
 
@@ -145,11 +159,21 @@ Dual-Objective实现两种目标：商品种类的分类任务（多分类任务
 
   将表格中的记录数据转变成了Graph数据（对记录对作为Graph的节点，做一个节点分类），knowledge graph也可变成matching pair graph
 
-
-
 ### **Cost-effective Variational Active Entity Resolution**
 
   *Alex Bogatu, Norman W. Paton, Mark Douthwaite, Stuart Davie, Andre Freitas*    **ICDE** 
+
+**Motivation:**
+
+现有ER模型需要大量的labeled data以及大量的训练时间，这项工作将VAEs应用到ER任务中，将feature engineering和similarity进行解耦
+
+**Contribution:**
+
+* 对实体进行映射的时候，不需要大量的有标签数据学习到一个比较好的嵌入向量，在映射这部分实现无监督
+
+**Weaknesses:**
+
+用VAE生成嵌入向量的效果应该没有BERT这种pre-trained model好，没有考虑context信息等
 
 ### **Make It Easy: An Effective End-to-End Entity Alignment Framework**
 
@@ -165,6 +189,10 @@ Dual-Objective实现两种目标：商品种类的分类任务（多分类任务
   * 轻量化：通过NEAP先做了一个blocking的处理，减少对象数量
   * 可信的EA
 
+**Weaknesses:**
+
+Entity similarity matrix的好坏还是由structured-based EA module决定，模型对一些超参会比较敏感，比如相似度的阈值等等超参。
+
 ### **Boosting the Speed of Entity Alignment 10$\times$: Dual Attention Matching Network with Normalized Hard Sample Mining**
 
 *Xin Mao, Wenting Wang, Yuanbin Wu, Man Lan*    **WWW** [(PDF)](https://dl.acm.org/doi/10.1145/3442381.3449897) (Citations: **0**)    [Code](https://github.com/MaoXinn/Dual-AMN)
@@ -178,7 +206,40 @@ Dual-Objective实现两种目标：商品种类的分类任务（多分类任务
 1. 降低模型复杂度，仅对Cross KG和inner KG两部分模型获得的信息；
 2. 提出了Normalized Hard Sample Mining Loss来解决现有随机采样信息量少以及Truncated Uniform Negative Sampling strategy效率低的问题；
 
-  
+### **Improving the Efficiency and Effectiveness  for BERT-based Entity Resolution**
+
+*Bing Li, Yukai Miao, Yaoshu Wang, Yifang Sun, Wei Wang*    **AAAI** [(PDF)](https://ojs.aaai.org/index.php/AAAI/article/view/17562) (Citations: **2**) 
+
+**Motivation:**
+
+ER suffers from quadratic pairs of co-references, which is of high time complexity.
+
+**Contributions:**
+
+* blocking和matching步骤都变成BERT-based
+
+**Weaknesses:**
+
+1. 需要大量标签数据对模型进行训练；
+2. blocking所需要的时间复杂度挺高的，高于大部分blocking
+3. blocking需要保证recall率，但这种情况下真的能保证recall接近1吗
+
+### **Relation-Aware Neighborhood Matching Model for Entity Alignment**
+
+*Yao Zhu, Hongzhi Liu, Zhonghai Wu, Yingpeng Du*    **AAAI** [(PDF)](https://ojs.aaai.org/index.php/AAAI/article/view/16606) (Citations: **1**)
+
+**Motivation:**
+
+现有的一些方法仅仅聚合节点上的信息，但同时也会将噪声聚合。现有的研究也没有关注到entity之间的relation信息，relation alignment和entity alignment之间具有正向的关系。
+
+**Contribution:**
+
+* 在一个框架中实现relation alignment和entity alignment，两个任务相互增强
+* 使用语义信息
+
+**Weaknesses:**
+
+实际使用时，distance matrix是iteration迭代出来的，算法效率存疑
 
 ## **2020**
 
