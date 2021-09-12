@@ -1,55 +1,12 @@
-# **关系型数据-知识图谱协同关联方法研究--Survey**
+# **关系型数据-知识图谱协同关联方法研究--Survey**	
 
-**定义：** 对于相同或者不同的知识库，判断两个实体是否指向同一个物理对象，然后合并相同的实体。实体对齐（Entity alignment） / 实体匹配（Entity matching） / 实体解析（Entity resolution）
 
-*来源：[CSDN](https://blog.csdn.net/qq_34357872/article/details/89364713)*
 
-[toc]
-
-## **2021**
-
-----
-
-### **Entity Alignment for Knowledge Graphs with Multi-order Convolutional Networks**
-
-*Nguyen Thanh Tam, Huynh Thanh Trung, Hongzhi Yin, Tong Van Vinh et al.*    **ICDE** [(PDF)](https://ieeexplore.ieee.org/document/9458674) (Citations: **0**)    [Code](https://github.com/thanhtrunghuynh93/EMGCN)
-
-**Motivation:**
-
-此前的生成嵌入的方法嵌入了大量的无关信息。entity embedding一方面需要将语法信息编码，另一方面编码语义信息。现有的模型没有很好地利用实体的特征信息。
-
-**Contribution:**
-
-* 提出了统一的、**无监督的**、**自适应的**实体对齐模型，**适用于跨语言的知识图谱**
-* 对于**跨语言的知识图谱**的实体一致满足：1.实体一致性；2.关系一致性；3.属性一致性，此模型同时满足3个性质
-
-**Weaknesses:**
-
-计算复杂度。看代码感觉是一个整个图full batch训练，有点类似于VGAE，复杂度可能会有点高
-
-### **Visual Pivoting for (Unsupervised) Entity Alignment**
-
-*Fangyu Liu, Muhao Chen, Dan Roth, Nigel Collier*    **AAAI** [(PDF)](https://ojs.aaai.org/index.php/AAAI/article/view/16550) (Citations: **1**)    [Code](https://github.com/cambridgeltl/eva)
-
-**Motivation:**
-
-现有的问题：entity alignment的训练集没有足够的标签，KG的稀疏性导致结构关联性比较弱。
-
-不管哪种语言或者哪种模式的KG，**视觉信息**对于指定的实体来说是比较**普适**的；在KG中image信息容易获得并且质量高，视觉信息更容易**扩充数据**。
-
-**Contributions：**
-
-* 首次在entity alignment中**使用images信息**
-* 使用**图像相似性**来代替标签信息，实现**无监督学习**
-* 通过消融实验给出各个模态的可解释性
-
-**Weaknesses:**
-
-虽然取得了很好的效果，但其实要求很高，因此会包含图像信息的知识图谱并不多，局限性比较大
+## **Relational Data**
 
 ### **End-to-End Task Based Parallelization for Entity Resolution on Dynamic Data**
 
-*Leonardo Gazzarri, Melanie Herschel*    **ICDE** [(PDF)](https://ieeexplore.ieee.org/document/9458646) (Citations: **0**)
+*Leonardo Gazzarri, Melanie Herschel*    **ICDE 2021** (Citations: **0**)
 
 **Motivation:**
 
@@ -63,7 +20,7 @@
 
 ### **Rotom: A Meta-Learned Data Augmentation Framework for Entity Matching, Data Cleaning, Text Classification, and Beyond**
 
-*Zhengjie Miao, Yuliang Li, Xiaolan Wang*    **SIGMOD** [(PDF)](https://dl.acm.org/doi/10.1145/3448016.3457258) (Citations: **0**)    [Code](https://github.com/megagonlabs/rotom)
+*Zhengjie Miao, Yuliang Li, Xiaolan Wang*    **SIGMOD 2021** (Citations: **0**) 
 
 **Motivation:**
 
@@ -86,7 +43,7 @@
 
 ### **Dual-Objective Fine-Tuning of BERT for Entity Matching**
 
-*Ralph Peeters, Christian Bizer*    **VLDB** [(PDF)](http://www.vldb.org/pvldb/vol14/p1913-peeters.pdf) (Citation: **0**)    [Code](https://github.com/wbsg-uni-mannheim/jointbert)
+*Ralph Peeters, Christian Bizer*    **VLDB 2021** (Citation: **0**)
 
 **Motivation:**
 
@@ -102,7 +59,7 @@ Dual-Objective实现两种目标：商品种类的分类任务（多分类任务
 
 ### **Automating Entity Matching Model Development**
 
-*Pei Wang, Weiling Zheng, Jiannan Wang, Jian Pei*    **ICDE** [(PDF)](https://ieeexplore.ieee.org/document/9458781) (Citations: **0**)
+*Pei Wang, Weiling Zheng, Jiannan Wang, Jian Pei*    **ICDE 2021** (Citations: **0**)
 
 **Motivation:**
 
@@ -120,7 +77,7 @@ Dual-Objective实现两种目标：商品种类的分类任务（多分类任务
 
 ### **Online Topic-Aware Entity Resolution Over Incomplete Data Streams**
 
-  *Weilong Ren, Xiang Lian, Kambiz Ghazinour*    **SIGMOD** [(PDF)](https://dl.acm.org/doi/10.1145/3448016.3457238) (Citations: **0**)
+  *Weilong Ren, Xiang Lian, Kambiz Ghazinour*    **SIGMOD 2021** (Citations: **0**)
 
   **Motivation:**
 
@@ -140,7 +97,7 @@ Dual-Objective实现两种目标：商品种类的分类任务（多分类任务
 
 ### **GNEM: A Generic One-to-Set Neural Entity Matching Framework**
 
-  *Runjin Chen, Yanyan Shen, Dongxiang Zhang*    **WWW** [(PDF)](https://dl.acm.org/doi/10.1145/3442381.3450119) (Citations: **0**)    [Code](https://github.com/ChenRunjin/GNEM)
+  *Runjin Chen, Yanyan Shen, Dongxiang Zhang*    **WWW 2021** (Citations: **0**)
 
   **Motivation:**
 
@@ -161,7 +118,7 @@ Dual-Objective实现两种目标：商品种类的分类任务（多分类任务
 
 ### **Cost-effective Variational Active Entity Resolution**
 
-  *Alex Bogatu, Norman W. Paton, Mark Douthwaite, Stuart Davie, Andre Freitas*    **ICDE** 
+  *Alex Bogatu, Norman W. Paton, Mark Douthwaite, Stuart Davie, Andre Freitas*    **ICDE 2021**
 
 **Motivation:**
 
@@ -175,40 +132,9 @@ Dual-Objective实现两种目标：商品种类的分类任务（多分类任务
 
 用VAE生成嵌入向量的效果应该没有BERT这种pre-trained model好，没有考虑context信息等
 
-### **Make It Easy: An Effective End-to-End Entity Alignment Framework**
-
-  *Congcong Ge, Xiaoze Liu, Lu Chen, Baihua Zheng, Yunjun Gao*    **SIGIR** 
-
-  **Motivation:**
-
-  两个主要的提升空间：1. Labor-intensive preprocessing；2. 语义信息的使用不充分
-
-  **Contribution:**
-
-  * 灵活的EA框架：end-to-end，无需人为的预处理
-  * 轻量化：通过NEAP先做了一个blocking的处理，减少对象数量
-  * 可信的EA
-
-**Weaknesses:**
-
-Entity similarity matrix的好坏还是由structured-based EA module决定，模型对一些超参会比较敏感，比如相似度的阈值等等超参。
-
-### **Boosting the Speed of Entity Alignment 10$\times$: Dual Attention Matching Network with Normalized Hard Sample Mining**
-
-*Xin Mao, Wenting Wang, Yuanbin Wu, Man Lan*    **WWW** [(PDF)](https://dl.acm.org/doi/10.1145/3442381.3449897) (Citations: **0**)    [Code](https://github.com/MaoXinn/Dual-AMN)
-
-**Motivation:**
-
-现有的EA方法具有很大的时间复杂性，对于比较大的数据集需要很长的时间运行才能得到结果。现有算法的复杂性来源于 1. 过于复杂的图编码器；2. 不够有效的负采样策略。
-
-**Contribution:**
-
-1. 降低模型复杂度，仅对Cross KG和inner KG两部分模型获得的信息；
-2. 提出了Normalized Hard Sample Mining Loss来解决现有随机采样信息量少以及Truncated Uniform Negative Sampling strategy效率低的问题；
-
 ### **Improving the Efficiency and Effectiveness  for BERT-based Entity Resolution**
 
-*Bing Li, Yukai Miao, Yaoshu Wang, Yifang Sun, Wei Wang*    **AAAI** [(PDF)](https://ojs.aaai.org/index.php/AAAI/article/view/17562) (Citations: **2**) 
+*Bing Li, Yukai Miao, Yaoshu Wang, Yifang Sun, Wei Wang*    **AAAI 2021** (Citations: **2**) 
 
 **Motivation:**
 
@@ -224,30 +150,13 @@ ER suffers from quadratic pairs of co-references, which is of high time complexi
 2. blocking所需要的时间复杂度挺高的，高于大部分blocking
 3. blocking需要保证recall率，但这种情况下真的能保证recall接近1吗
 
-### **Relation-Aware Neighborhood Matching Model for Entity Alignment**
-
-*Yao Zhu, Hongzhi Liu, Zhonghai Wu, Yingpeng Du*    **AAAI** [(PDF)](https://ojs.aaai.org/index.php/AAAI/article/view/16606) (Citations: **1**)
-
-**Motivation:**
-
-现有的一些方法仅仅聚合节点上的信息，但同时也会将噪声聚合。现有的研究也没有关注到entity之间的relation信息，relation alignment和entity alignment之间具有正向的关系。
-
-**Contribution:**
-
-* 在一个框架中实现relation alignment和entity alignment，两个任务相互增强
-* 使用语义信息
-
-**Weaknesses:**
-
-实际使用时，distance matrix是iteration迭代出来的，算法效率存疑
-
 ## **2020**
 
 ----
 
 ### **Deep Entity Matching with Pre-Trained Language Models**
 
-*Yuliang Li, Jinfeng Li, AnHai Doan, Wang-Chiew Tan*    **VLDB** ([PDF](http://www.vldb.org/pvldb/vol14/p50-li.pdf))  (Citations: **34**)    [Code](https://github.com/megagonlabs/ditto)
+*Yuliang Li, Jinfeng Li, AnHai Doan, Wang-Chiew Tan*    **VLDB 2020** (Citations: **34**)
 
 **Motivation:**
 
@@ -268,7 +177,7 @@ The positive  rate ranges from 9.4% to 25%. 正样本的占比其实很小，训
 
 ### **Multi-Context Attention for Entity Matching**
 
-*Dongxiang Zhang, Yuyang Nie, Sai Wu, Yanyan Shen, Kian-Lee Tan*    **WWW** [(PDF)](https://dl.acm.org/doi/10.1145/3366423.3380017) (Citations: **8**)    
+*Dongxiang Zhang, Yuyang Nie, Sai Wu, Yanyan Shen, Kian-Lee Tan*    **WWW 2020** (Citations: **8**)
 
 **Motivation:**
 
@@ -278,22 +187,13 @@ The positive  rate ranges from 9.4% to 25%. 正样本的占比其实很小，训
 
 引入self-attention、pair-attention以及global-attention获得更多维度的信息，其次还引入了attribute attention来减少不可信赖的特征带来的副作用
 
-### **Collective Multi-type Entity Alignment Between Knowledge Graphs**
+**Weaknesses:**
 
-*Qi Zhu, Hao Wei, Bunyamin Sisman, Da Zheng, Christos Faloutsos, Xin Luna Dong, Jiawei Han*    **WWW** [(PDF)](https://dl.acm.org/doi/10.1145/3366423.3380289) (Citations:**9**)
-
-**Motivation:**
-
-知识图谱中存在大量不同类型的实体，以及这些实体之间的关系往往不同，甚至实体之间存在多重关系，一般GNNs不能满足这些特性。而且因为知识图谱不一定完整，因此两个相同的实体在不同的知识图谱之中的连接关系很可能不同，如果直接使用GNNs往往因为连边不同导致精度下降。
-
-**Contributions:**
-
-* **cross-graph attention**关注两个知识图谱中的相似邻居，**relation-aware self-attention**避免随意地匹配有相同邻居的两个实体
-* 能够适应大规模知识图谱的实体对齐
+想法挺简单的，但是效果和同类的supervised方法比起来并不好
 
 ### **Efficient Entity Resolution on Heterogeneous Records**
 
-*Yiming Lin, Hongzhi Wang, Jianzhong Li, Hong Gao*    **TKDE** [(PDF)](https://ieeexplore.ieee.org/document/8637043) (Citation:**4**)
+*Yiming Lin, Hongzhi Wang, Jianzhong Li, Hong Gao*    **TKDE 2020** (Citation:**4**)
 
 **Motivations:**
 
@@ -315,7 +215,7 @@ The positive  rate ranges from 9.4% to 25%. 正样本的占比其实很小，训
 
 ### **ZeroER: Entity Resolution using Zero Labeled Examples**
 
-*Renzhi Wu, Sanya Chaba, Saurabh Sawlani, Xu Chu, Saravanan*    **SIGMOD** [(PDF)](https://dl.acm.org/doi/10.1145/3318464.3389743) (Citations: **15**)
+*Renzhi Wu, Sanya Chaba, Saurabh Sawlani, Xu Chu, Saravanan*    **SIGMOD 2020** (Citations: **15**)
 
 **Motivation:**
 
@@ -350,13 +250,9 @@ The positive  rate ranges from 9.4% to 25%. 正样本的占比其实很小，训
 
 引入GAN模型解决EM问题：Label Generator和一个Discriminator之间的博弈，除此之外引入了diversity模块和propagation模块分别解决过拟合问题以及label不平衡问题
 
-## **2018**
-
-----
-
 ### **Deep Learning for Entity Matching: A Design Space Exploration**
 
-*Sidharth Mudal, Han Li, Theodoros Rekatsinas, AnHai Doan, Youngchoon Park et al.*    **SIGMOD** [(PDF)](https://dl.acm.org/doi/10.1145/3183713.3196926) (Citations: **245**)    [Code](https://github.com/anhaidgroup/deepmatcher)
+*Sidharth Mudal, Han Li, Theodoros Rekatsinas, AnHai Doan, Youngchoon Park et al.*    **SIGMOD 2018** (Citations: **245**)
 
 **Motivation:**
 
@@ -378,4 +274,115 @@ The positive  rate ranges from 9.4% to 25%. 正样本的占比其实很小，训
 
 ### **Distributed Representations of Tuples for Entity Resolution**
 
-*Muhammad Ebraheem, Saravanan Thirumuruganathan, Shafiq Joty, Mourad Ouzzani, Nan Tang*  **VLDB** [(PDF)](http://www.vldb.org/pvldb/vol11/p1454-ebraheem.pdf) (Citations: **140**)
+*Muhammad Ebraheem, Saravanan Thirumuruganathan, Shafiq Joty, Mourad Ouzzani, Nan Tang*  **VLDB 2018** (Citations: **140**)
+
+## **Knowledge Graph** [[To Relational Data]]( #Relational Data)
+
+### **Entity Alignment for Knowledge Graphs with Multi-order Convolutional Networks**
+
+*Nguyen Thanh Tam, Huynh Thanh Trung, Hongzhi Yin, Tong Van Vinh et al.*    **ICDE 2021** (Citations: **0**) 
+
+**Motivation:**
+
+此前的生成嵌入的方法嵌入了大量的无关信息。entity embedding一方面需要将语法信息编码，另一方面编码语义信息。现有的模型没有很好地利用实体的特征信息。
+
+**Contribution:**
+
+* 提出了统一的、**无监督的**、**自适应的**实体对齐模型，**适用于跨语言的知识图谱**
+* 对于**跨语言的知识图谱**的实体一致满足：1.实体一致性；2.关系一致性；3.属性一致性，此模型同时满足3个性质
+
+**Weaknesses:**
+
+计算复杂度。看代码感觉是一个整个图full batch训练，有点类似于VGAE，复杂度可能会有点高
+
+### **Visual Pivoting for (Unsupervised) Entity Alignment**
+
+*Fangyu Liu, Muhao Chen, Dan Roth, Nigel Collier*    **AAAI 2021** (Citations: **1**)
+
+**Motivation:**
+
+现有的问题：entity alignment的训练集没有足够的标签，KG的稀疏性导致结构关联性比较弱。
+
+不管哪种语言或者哪种模式的KG，**视觉信息**对于指定的实体来说是比较**普适**的；在KG中image信息容易获得并且质量高，视觉信息更容易**扩充数据**。
+
+**Contributions：**
+
+* 首次在entity alignment中**使用images信息**
+* 使用**图像相似性**来代替标签信息，实现**无监督学习**
+* 通过消融实验给出各个模态的可解释性
+
+**Weaknesses:**
+
+虽然取得了很好的效果，但其实要求很高，因此会包含图像信息的知识图谱并不多，局限性比较大
+
+### **Make It Easy: An Effective End-to-End Entity Alignment Framework**
+
+  *Congcong Ge, Xiaoze Liu, Lu Chen, Baihua Zheng, Yunjun Gao*    **SIGIR 2021** 
+
+  **Motivation:**
+
+  两个主要的提升空间：1. Labor-intensive preprocessing；2. 语义信息的使用不充分
+
+  **Contribution:**
+
+  * 灵活的EA框架：end-to-end，无需人为的预处理
+  * 轻量化：通过NEAP先做了一个blocking的处理，减少对象数量
+  * 可信的EA
+
+**Weaknesses:**
+
+1. 空间复杂度是$n^2$ （不止$n^2$，仅仅考虑entity matching matrix就有这个复杂度了）
+2. Entity similarity matrix的好坏还是由structured-based EA module决定，模型对一些超参会比较敏感，比如相似度的阈值等等超参。
+
+### **Boosting the Speed of Entity Alignment 10$\times$: Dual Attention Matching Network with Normalized Hard Sample Mining**
+
+*Xin Mao, Wenting Wang, Yuanbin Wu, Man Lan*    **WWW 2021** (Citations: **0**)
+
+**Motivation:**
+
+现有的EA方法具有很大的时间复杂性，对于比较大的数据集需要很长的时间运行才能得到结果。现有算法的复杂性来源于 1. 过于复杂的图编码器；2. 不够有效的负采样策略。
+
+**Contribution:**
+
+1. 降低模型复杂度，仅对Cross KG和inner KG两部分模型获得的信息；
+2. 提出了Normalized Hard Sample Mining Loss来解决现有随机采样信息量少以及Truncated Uniform Negative Sampling strategy效率低的问题；
+
+### **Relation-Aware Neighborhood Matching Model for Entity Alignment**
+
+*Yao Zhu, Hongzhi Liu, Zhonghai Wu, Yingpeng Du*    **AAAI 2021** (Citations: **1**)
+
+**Motivation:**
+
+现有的一些方法仅仅聚合节点上的信息，但同时也会将噪声聚合。现有的研究也没有关注到entity之间的relation信息，relation alignment和entity alignment之间具有正向的关系。
+
+**Contribution:**
+
+* 在一个框架中实现relation alignment和entity alignment，两个任务相互增强
+* 使用语义信息
+
+**Weaknesses:**
+
+实际使用时，distance matrix是iteration迭代出来的，算法效率存疑
+
+### **Business Entity Matching with Siamese Graph Convolutional Networks**
+
+*Evgeny Krivosheev, Mattia Atzeni, Katsiaryna Mirylenka, Paolo Scotton, Christoph Miksovic, Anton Zorin*    **AAAI 2021** (CItations: **0**)
+
+这篇感觉没啥意思
+
+### **Collective Multi-type Entity Alignment Between Knowledge Graphs**
+
+*Qi Zhu, Hao Wei, Bunyamin Sisman, Da Zheng, Christos Faloutsos, Xin Luna Dong, Jiawei Han*    **WWW 2020** (Citations:**9**)
+
+**Motivation:**
+
+知识图谱中存在大量不同类型的实体，以及这些实体之间的关系往往不同，甚至实体之间存在多重关系，一般GNNs不能满足这些特性。而且因为知识图谱不一定完整，因此两个相同的实体在不同的知识图谱之中的连接关系很可能不同，如果直接使用GNNs往往因为连边不同导致精度下降。
+
+**Contributions:**
+
+* **cross-graph attention**关注两个知识图谱中的相似邻居，**relation-aware self-attention**避免随意地匹配有相同邻居的两个实体
+* 能够适应大规模知识图谱的实体对齐
+
+**Weaknesses:**
+
+将fastText编码后的向量放入GNN中反而破坏fasttext生成的编码后的向量。
