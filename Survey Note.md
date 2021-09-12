@@ -150,10 +150,6 @@ ER suffers from quadratic pairs of co-references, which is of high time complexi
 2. blocking所需要的时间复杂度挺高的，高于大部分blocking
 3. blocking需要保证recall率，但这种情况下真的能保证recall接近1吗
 
-## **2020**
-
-----
-
 ### **Deep Entity Matching with Pre-Trained Language Models**
 
 *Yuliang Li, Jinfeng Li, AnHai Doan, Wang-Chiew Tan*    **VLDB 2020** (Citations: **34**)
@@ -240,7 +236,7 @@ The positive  rate ranges from 9.4% to 25%. 正样本的占比其实很小，训
 
 ### **ERGAN: Generative Adversarial Networks for Entity Resolution**
 
-*Jingyu Shao, Qing Wang, Asiri Wijesinghe, Erhard Rahm*    **ICDM** [(PDF)](ERGAN: Generative Adversarial Networks for Entity Resolution) (Citations: )
+*Jingyu Shao, Qing Wang, Asiri Wijesinghe, Erhard Rahm*    **ICDM 2020** (Citations: )
 
 **Motivation:**
 
@@ -276,7 +272,7 @@ The positive  rate ranges from 9.4% to 25%. 正样本的占比其实很小，训
 
 *Muhammad Ebraheem, Saravanan Thirumuruganathan, Shafiq Joty, Mourad Ouzzani, Nan Tang*  **VLDB 2018** (Citations: **140**)
 
-## **Knowledge Graph** [[To Relational Data]]( #Relational Data)
+## **Knowledge Graph** [[To Relational Data]](#Relational Data)
 
 ### **Entity Alignment for Knowledge Graphs with Multi-order Convolutional Networks**
 
