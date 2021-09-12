@@ -272,7 +272,7 @@ The positive  rate ranges from 9.4% to 25%. 正样本的占比其实很小，训
 
 *Muhammad Ebraheem, Saravanan Thirumuruganathan, Shafiq Joty, Mourad Ouzzani, Nan Tang*  **VLDB 2018** (Citations: **140**)
 
-## **Knowledge Graph** [[To Relational Data]](#Relational Data)
+## **Knowledge Graph** [[To Relational Data](#Relational Data)]
 
 ### **Entity Alignment for Knowledge Graphs with Multi-order Convolutional Networks**
 
