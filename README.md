@@ -16,7 +16,7 @@ Top journals: ```TKDE```
 |-------|--------|--------|--------|--------|--------|--------|
 |2021|**GNEW: A Generic One-to-Set Neural Entity Matching Framework**|gated GCN|Supervised|```WWW```|[PDF](https://dl.acm.org/doi/10.1145/3442381.3450119)|[Code](https://github.com/ChenRunjin/GNEM)|
 |2021|**Rotom: A Meta-Learned Data Augmentation Framework for Entity Matching, Data Cleaning, Text Classification, and Beyond**|Meta Learning|Semi-supervised|```SIGMOD```|[PDF](https://dl.acm.org/doi/10.1145/3448016.3457258)|[Code](https://github.com/megagonlabs/rotom)|
-|2021| **Dual-Objective Fine-Tuning of Bert for Entity Matching**   | Pre-trained model (JointBert) |Supervised|```DBLP```|[PDF](http://www.vldb.org/pvldb/vol14/p1913-peeters.pdf)|[Code](https://github.com/wbsg-uni-mannheim/jointbert)|
+|2021| **Dual-Objective Fine-Tuning of Bert for Entity Matching**   | Pre-trained model (JointBert) |Supervised|```VLDB```|[PDF](http://www.vldb.org/pvldb/vol14/p1913-peeters.pdf)|[Code](https://github.com/wbsg-uni-mannheim/jointbert)|
 |2021|**Online Topic-Aware Entity Resolution Over Incomplete Data Stream**|topic-aware similarity|Unsupervised|```SIGMOD```|[PDF](https://dl.acm.org/doi/10.1145/3448016.3457238)|[Code](http://www.cs.kent.edu/~wren/TER-iDS/)|
 |2021|**End-to-End Task Based Parallelization for Entity Resolution on Dynamic Data**|||```ICDE```|[PDF]()||
 |2021|**Cost-effective Variational Active Entity Resolution**|VAER (VAE+Active learning)|Unsupervised|```ICDE```|[PDF](https://ieeexplore.ieee.org/document/9458760)||
@@ -25,7 +25,7 @@ Top journals: ```TKDE```
 |2020|**Efficient Entity Resoltion on Heterogeneous Records**|Super Record|Unsupervised|```TKDE```|[PDF](https://ieeexplore.ieee.org/document/8637043)||
 |2020|**$r$-HUMO: A Risk-Aware Human-Machine Cooperation Framework for Entity Resolution with Quality Guarantees**|||```TKDE```|[PDF]()|[Code]()|
 |2020|**Multi-Context Attention for Entity Matching**|multi-context attention (**MCA**)|Supervised|```WWW```|[PDF](https://dl.acm.org/doi/10.1145/3366423.3380017)||
-|2020|**Deep Entity Matching with Pre-Trained Language Model**|Data Augment + BERT (**Ditto**)|Supervised|```DBLP```|[PDF](http://www.vldb.org/pvldb/vol14/p50-li.pdf)|[Code](https://github.com/megagonlabs/ditto)|
+|2020|**Deep Entity Matching with Pre-Trained Language Model**|Data Augment + BERT (**Ditto**)|Supervised|```VLDB```|[PDF](http://www.vldb.org/pvldb/vol14/p50-li.pdf)|[Code](https://github.com/megagonlabs/ditto)|
 |2020|**ZeroER: Entity Resolution using Zero Labeled Examples**||Unsupervised|```SIGMOD```|[PDF]()|[Code]()|
 |2020|**Towards Interpretable and Learnable Risk Analysis for Entity Resolution**|||```SIGMOD```|[PDF]()|[Code]()|
 |2020|**Entity Matching Meets Data Science: A Progress Report from the Magellan Project**|||```SIGMOD```|[PDF]()|[Code]()|
@@ -49,7 +49,7 @@ Top journals: ```TKDE```
 |2021|**Relation-Aware Neighborhood Matching Model for Entity Alignment**|Relation-aware Neighborhood Matching (**RNM**)|Semi-supervised|```AAAI```|[PDF](https://ojs.aaai.org/index.php/AAAI/article/view/16606)||
 |2021|**Business Entity Matching with Siamese Graph Convolutional Networks**|BERT+GCN (**S-GCN**)|Unsupervised|```AAAI```|[PDF]()|[Code]()|
 |2020|**Collective Multi-type Entity Alignment Between Knowledge Graph**|**CG-MuAlign**|Unsupervised|```WWW```|[PDF]()|[Code]()|
-|2020|**A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs**|||```DBLP```|[PDF]()|[Code]()|
+|2020|**A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs**|||```VLDB```|[PDF]()|[Code]()|
 |2020|**REA: Robust Cross-lingual Entity Alignment Between Knowledge Graphs**|||```KDD```|[PDF]()|[Code]()|
 |2020|**Global Structure and Local Semantics-Preserved Embeddings for Entity Alignment**|||```IJCAI```|[PDF]()|[Code]()|
 |2020|**Collective Entity Alignment via Adaptive Features**|||```ICDE```|[PDF]()|[Code]()|
