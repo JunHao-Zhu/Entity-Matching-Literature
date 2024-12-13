@@ -14,6 +14,28 @@ Top journals: ```TKDE```
 
 |Year   | Title  | Model | Type | Venue | Paper | Code |
 |-------|--------|--------|--------|--------|--------|--------|
+|2024|**MRG-SER: Self-supervised Spatial Entity Resolution Based on Multi-Relational Graph**|AttrGNN + BERT|Self-supervised|`VLDB`|[PDF](https://vldb.org/workshops/2024/proceedings/LSGDA/LSGDA24.03.pdf)|N/A|```
+|2024|**MultiEM: Efficient and Effective Unsupervised Multi-Table Entity Matching**|Sentence-BERT + HNSW|Unsupervised|`ICDE`|[PDF](https://ieeexplore.ieee.org/document/10598123)|[Code](https://github.com/ZJU-DAILY/MultiEM)|
+| 2024 | **Matching Feature Separation Network for Domain Adaptation in Entity Matching** | Pre-trained LM (BERT) + Transformer | Supervised | `WWW` | [PDF](https://doi.org/10.1145/3589334.3645397) | [Code](https://github.com/DMA-Group/MFSN-DAEM) |
+| 2024 | **BoostER: Leveraging Large Language Models for Enhancing Entity Resolution** | LLM(GPT-4) | LLM | ``WWW`` | [PDF](https://dl.acm.org/doi/10.1145/3589335.3651245) | N/A|
+| 2024 | **Cost-Effective In-Context Learning for Entity Resolution: A Design Space Exploration** | In-Context Learning + LLM (GPT-4) | LLM | `ICDE` | [PDF](https://ieeexplore.ieee.org/document/10597751) | [Code](https://github.com/fmh1art/BatchER) |
+| 2023 | **The Battleship Approach to the Low Resource Entity Matching Problem** | Active Learning + BERT | Semi-supervised | `SIGMOD` | [PDF](https://doi.org/10.1145/3626711) | [Code](https://github.com/BarGenossar/The-Battleship-Approach-to-AL-of-EM-Problem) |
+| 2023 | **REPLACE: A Logical Framework for Combining Collective Entity Resolution and Repairing** |  | Supervised | ```IJCAI``` | [PDF](https://www.ijcai.org/proceedings/2023/349) | N/A |
+| 2023 | **CollaborEM: A Self-Supervised Entity Matching Framework Using Multi-Features Collaboration** | BERT + GNN + Multi-Feature | Self-supervised | `TKDE` | [PDF](https://ieeexplore.ieee.org/document/9647870) | [Code](https://github.com/ZJU-DAILY/CollaborEM) |
+|2023|**CampER: An Effective Framework for Privacy-Aware Deep Entity Resolution**|RoBERTa + Collaborative Fine-tuning|Self-supervised|`KDD`|[PDF](https://doi.org/10.1145/3580305.3599266)|[Code]( https://github.com/ZJU-DAILY/CampER)|
+|2023|**Benchmarking Filtering Techniques for Entity Resolution**||Unsupervised|`ICDE`|[PDF](https://ieeexplore.ieee.org/document/10184692)|[Code](https://github.com/gpapadis/ContinuousFilteringBenchmark) |
+| 2023 | **FlexER: Flexible Entity Resolution for Multiple Intents** | FlexER (GNN + Multiplex Graph) | Supervised | `SIGMOD` | [PDF](https://doi.org/10.1145/3588722) | [Code](https://github.com/BarGenossar/FlexER/) |
+| 2023 | **Ground Truth Inference for Weakly Supervised Entity Matching** | SIMPLE-EM (Random Forest) | Semi-supervised | `SIGMOD` | [PDF](https://doi.org/10.1145/3588712) | N/A |
+| 2022 | **Bridging the Gap between Reality and Ideality of Entity Matching: A Revisting and Benchmark Re-Construction** |  |  | ```AAAI``` | [PDF](https://www.ijcai.org/proceedings/2022/552) | [Code](https://github.com/tshu-w/ember) |
+| 2022 | **Unsupervised Entity Resolution With Blocking and Graph Algorithms** | | Unsupervised | `TKDE` | [PDF](https://ieeexplore.ieee.org/document/9079896) | [Code](https://github.com/uestc-db/Unsupervised-Entity-Resolution) |   
+| 2022 | **Gradual Machine Learning for Entity Resolution** | Factor Graph + Gradual Learning | Self-supervised | `TKDE` | [PDF](https://ieeexplore.ieee.org/document/9130070) | N/A |
+| 2022 | **Zero Matcher: A Cost-Off Entity Matching System** | BERT + GNN + Multi-type EM | Unsupervised | `SIGIR` | [PDF](https://doi.org/10.1145/3477495.3531661) | [Code](https://github.com/ZJU-DAILY/ZeroMatcher) |                                
+|2022|**Effective Explanations for Entity Resolution Models**|LSTM + DistilBERT|Supervised|`ICDE`|[PDF](https://ieeexplore.ieee.org/document/9835425/)|[Code](https://github.com/tteofili/certa)|
+|2022|**Synthesizing Privacy Preserving Entity Resolution Datasets**|Transformer + GAN|Unsupervised|`ICDE`|[PDF](https://ieeexplore.ieee.org/document/9835693)|N/A|
+|2022|**Deep and Collective Entity Resolution in Parallel**|Logic Rules + ML|Supervised|`ICDE`|[PDF](https://ieeexplore.ieee.org/document/9835258)|N/A|
+|2022|**Domain Adaptation for Deep Entity Resolution**|DADER(Pre-trained LMs (BERT) + RNN)|Semi-supervised |`SIGMOD`|[PDF](https://dl.acm.org/doi/10.1145/3514221.3517870)|[Code](https://github.com/ruc-datalab/DADER)|
+|2022|**Entity Resolution with Hierarchical Graph Attention Networks**|HierGAT|Supervised|`SIGMOD`|[PDF](https://dl.acm.org/doi/10.1145/3514221.3517872)|[Code](https://github.com/CGCL-codes/HierGAT)|
+|2022|**Hierarchical Entity Resolution using an Oracle**|Triplet Oracle|Semi-supervised|```SIGMOD```|[PDF](https://dl.acm.org/doi/10.1145/3514221.3526147)|N/A|```
 |2021|**GNEW: A Generic One-to-Set Neural Entity Matching Framework**|gated GCN|Supervised|```WWW```|[PDF](https://dl.acm.org/doi/10.1145/3442381.3450119)|[Code](https://github.com/ChenRunjin/GNEM)|
 |2021|**Rotom: A Meta-Learned Data Augmentation Framework for Entity Matching, Data Cleaning, Text Classification, and Beyond**|Meta Learning|Semi-supervised|```SIGMOD```|[PDF](https://dl.acm.org/doi/10.1145/3448016.3457258)|[Code](https://github.com/megagonlabs/rotom)|
 |2021| **Dual-Objective Fine-Tuning of Bert for Entity Matching**   | Pre-trained model (JointBert) |Supervised|```VLDB```|[PDF](http://www.vldb.org/pvldb/vol14/p1913-peeters.pdf)|[Code](https://github.com/wbsg-uni-mannheim/jointbert)|
@@ -36,28 +58,3 @@ Top journals: ```TKDE```
 |2020|**GraphER: Token-Centric Entity Resolution with Graph Convolutional Neural Networks**|||```AAAI```|[PDF]()|[Code]()|
 |2020|**Accelerating Column Generation via Flexible Dual Optimal Inequalities with Application to Entity Resolution**|||```AAAI```|[PDF]()|[Code]()|
 |2018|**Deep Learning for Entity Matching: A Design Space Exploration**|Deep Learning|Supervised|```SIGMOD```|[PDF](https://dl.acm.org/doi/10.1145/3183713.3196926)|[Code](https://github.com/anhaidgroup/deepmatcher)|
-
-## Entity Alignment (Knowledge Graph) [[Back to top](#Sources)]
-
-
-|Year    | Title  | Model | Type | Venue | Paper | Code |
-|-------|--------|--------|--------|--------|--------|--------|
-|2021 | **Boosting the Speed of Entity Alignment 10×: Dual Attention Matching Network with Normalized Hard Sample Mining** | GNN Attention (**Dual-AMN**) | Unsupervised | ```WWW``` |[PDF](https://dl.acm.org/doi/10.1145/3442381.3449897) | [Code](https://github.com/MaoXinn/Dual-AMN) |
-|2021|**Make It Easy: An Effective End-to-End Entity Alignment Framework**|similarity matrix (EASY=NEAP+SRS)|Unsupervised|```SIGIR```|[PDF](https://dl.acm.org/doi/abs/10.1145/3404835.3462870)|[Code](https://github.com/ZJU-DBL/EASY)|
-|2021|**Entity Alignment for Knowledge Graphs with Multi-order Convolutional Networks (Extended Abstract)**|GCN (EMGCN)|Unsupervised|```ICDE```|[PDF](https://ieeexplore.ieee.org/document/9262038)|[Code](https://github.com/thanhtrunghuynh93/EMGCN)|
-|2021|**Visual Pivoting for (Unsupervised) Entity Alignment**|GNN+Resnet+relation and attribute model (**EVA**)|Unsupervised|```AAAI```|[PDF](https://ojs.aaai.org/index.php/AAAI/article/view/16550)|[Code](https://github.com/cambridgeltl/eva)|
-|2021|**Relation-Aware Neighborhood Matching Model for Entity Alignment**|Relation-aware Neighborhood Matching (**RNM**)|Semi-supervised|```AAAI```|[PDF](https://ojs.aaai.org/index.php/AAAI/article/view/16606)||
-|2021|**Business Entity Matching with Siamese Graph Convolutional Networks**|BERT+GCN (**S-GCN**)|Unsupervised|```AAAI```|[PDF]()|[Code]()|
-|2020|**Collective Multi-type Entity Alignment Between Knowledge Graph**|**CG-MuAlign**|Unsupervised|```WWW```|[PDF]()|[Code]()|
-|2020|**A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs**|||```VLDB```|[PDF]()|[Code]()|
-|2020|**REA: Robust Cross-lingual Entity Alignment Between Knowledge Graphs**|||```KDD```|[PDF]()|[Code]()|
-|2020|**Global Structure and Local Semantics-Preserved Embeddings for Entity Alignment**|||```IJCAI```|[PDF]()|[Code]()|
-|2020|**Collective Entity Alignment via Adaptive Features**|||```ICDE```|[PDF]()|[Code]()|
-|2020|**Neighborhood Matching Network for Entity Alignment**|||```ACL```|[PDF]()|[Code]()|
-|2020|**COTSAE CO-Training of Structure and Attribute Embeddings for Entity Alignment**|||```AAAI```|[PDF]()|[Code]()|
-
-
-
-## Note
-
-This project refers to [graph-adversarial-learning-literature](https://github.com/safe-graph/graph-adversarial-learning-literature) 
